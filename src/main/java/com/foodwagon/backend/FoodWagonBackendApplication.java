@@ -3,6 +3,10 @@ package com.foodwagon.backend;
 import io.github.cdimascio.dotenv.Dotenv;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableAsync;
+
+
+@EnableAsync
 
 @SpringBootApplication
 public class FoodWagonBackendApplication {
@@ -22,10 +26,8 @@ public class FoodWagonBackendApplication {
         setIfPresent(dotenv, "JWT_SECRET");
         setIfPresent(dotenv, "FRONTEND_URL");
 
-        setIfPresent(dotenv,"BREVO_SMTP_USER");
-        setIfPresent(dotenv,"BREVO_SMTP_PASS");
-        setIfPresent(dotenv,"USER_EMAIL");
-        setIfPresent(dotenv,"SMTP_HOST");setIfPresent(dotenv,"SMTP_PORT");
+        setIfPresent(dotenv,"BREVO_API_KEY");
+        setIfPresent(dotenv,"BREVO_SENDER_EMAIL");
 
         SpringApplication.run(FoodWagonBackendApplication.class, args);
     }
