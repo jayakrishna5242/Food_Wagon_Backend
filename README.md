@@ -21,28 +21,37 @@ FoodWagon is a full-stack food ordering platform built with **Spring Boot** and 
 
 ---
 
-## 📁 Project Structure
-FoodWagon/
+## 📁 Project StructureFoodWagon/
 ├── backend/ # Spring Boot Application
-│ ├── src/main/java/com/foodwagon/
-│ │ ├── config/ # Security & App Config
-│ │ ├── controller/ # REST Controllers
-│ │ ├── service/ # Business Logic
-│ │ ├── repository/ # Data Access
-│ │ ├── entity/ # JPA Entities
-│ │ └── dto/ # Data Transfer Objects
+│ ├── src/
+│ │ ├── main/
+│ │ │ ├── java/com/foodwagon/
+│ │ │ │ ├── config/ # Security & App Config
+│ │ │ │ ├── controller/ # REST Controllers
+│ │ │ │ ├── service/ # Business Logic
+│ │ │ │ ├── repository/ # Data Access
+│ │ │ │ ├── entity/ # JPA Entities
+│ │ │ │ └── dto/ # Data Transfer Objects
+│ │ │ └── resources/
+│ │ │ └── application.properties
+│ │ └── test/
 │ └── pom.xml
 │
 └── frontend/ # React Application
+├── public/
 ├── src/
 │ ├── components/ # Reusable Components
 │ ├── context/ # AppContext (Auth State)
 │ ├── pages/ # Page Components
 │ ├── api/ # API Service Layer
+│ ├── utils/ # Helper Functions
+│ ├── types/ # TypeScript Types
 │ └── App.tsx
 ├── .env
-└── package.json
+├── package.json
+└── vite.config.ts
 
+🔥 Why This Works
 text
 
 ---
@@ -120,4 +129,5 @@ Backend: Render, Railway, or AWS
 Frontend: Vercel or Netlify
 
 Database: PostgreSQL (AWS RDS or Render PostgreSQL)
+
 
