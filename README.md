@@ -21,9 +21,6 @@ FoodWagon is a full-stack food ordering platform built with **Spring Boot** and 
 
 ---
 
-text
-
----
 
 ## ⚙️ Backend Setup
 
@@ -98,6 +95,7 @@ Backend: Render, Railway, or AWS
 Frontend: Vercel or Netlify
 
 Database: PostgreSQL (AWS RDS or Render PostgreSQL)
+
 
 
 
