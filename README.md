@@ -120,3 +120,4 @@ Backend: Render, Railway, or AWS
 Frontend: Vercel or Netlify
 
 Database: PostgreSQL (AWS RDS or Render PostgreSQL)
+
